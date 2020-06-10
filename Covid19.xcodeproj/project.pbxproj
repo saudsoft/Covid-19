@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C356CBBC2491736100CBB65C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356CBBB2491736100CBB65C /* SettingsViewController.swift */; };
+		C363D88524918DEB006F5087 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C363D88424918DEB006F5087 /* README.md */; };
 		C3956C862469BA0400ECB8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3956C852469BA0400ECB8C0 /* AppDelegate.swift */; };
 		C3956C882469BA0400ECB8C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3956C872469BA0400ECB8C0 /* SceneDelegate.swift */; };
 		C3956C8A2469BA0400ECB8C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3956C892469BA0400ECB8C0 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		43104297538BBE6C774F721B /* Pods-Covid19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19.release.xcconfig"; path = "Target Support Files/Pods-Covid19/Pods-Covid19.release.xcconfig"; sourceTree = "<group>"; };
 		9FEDB02C760C4DA107EF1FB8 /* Pods-Covid19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19.debug.xcconfig"; path = "Target Support Files/Pods-Covid19/Pods-Covid19.debug.xcconfig"; sourceTree = "<group>"; };
 		C356CBBB2491736100CBB65C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C363D88424918DEB006F5087 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C3956C822469BA0400ECB8C0 /* كوفيد١٩.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "كوفيد١٩.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3956C852469BA0400ECB8C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3956C872469BA0400ECB8C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		C3956C792469BA0400ECB8C0 = {
 			isa = PBXGroup;
 			children = (
+				C363D88424918DEB006F5087 /* README.md */,
 				C3956C842469BA0400ECB8C0 /* Covid19 */,
 				C3956C832469BA0400ECB8C0 /* Products */,
 				07634190D02A4E1082888571 /* Pods */,
@@ -199,6 +202,7 @@
 			files = (
 				C3956C922469BA0500ECB8C0 /* LaunchScreen.storyboard in Resources */,
 				C3956C8F2469BA0500ECB8C0 /* Assets.xcassets in Resources */,
+				C363D88524918DEB006F5087 /* README.md in Resources */,
 				C3956C8D2469BA0400ECB8C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
