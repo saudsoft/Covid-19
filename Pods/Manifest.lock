@@ -1,0 +1,24 @@
+PODS:
+  - GTProgressBar (0.3.3)
+  - iProgressHUD (1.1.1)
+  - SideMenu (6.4.8)
+
+DEPENDENCIES:
+  - GTProgressBar
+  - iProgressHUD
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - GTProgressBar
+    - iProgressHUD
+    - SideMenu
+
+SPEC CHECKSUMS:
+  GTProgressBar: a480283ecb0ada50de16c71e634892826928f640
+  iProgressHUD: caa742128253c97f2c2e1ec59e2bbe6cf689df6a
+  SideMenu: 4a891be552d30bb6fa87ad404d62e485f8450c34
+
+PODFILE CHECKSUM: 765c3aee00d37f96f7afdff6c77b6d7c4ac99585
+
+COCOAPODS: 1.9.3
