@@ -8,7 +8,7 @@
 يتم جلب بيانات كورونا من مصدر مفتوح [https://corona.lmao.ninja](url)
 
 
-| الرئيسية  | قائمة الدول  | إحصائية دولة  | خيارات التطبيق|
+| الرئيسية  | قائمة الدول  | إحصائية لدولة محددة  | خيارات التطبيق|
 |:----------|:----------|:----------|:---|
 | ![](https://ios.saudsoft.com/github/p1.png)|![](https://ios.saudsoft.com/github/p2.png)    | ![](https://ios.saudsoft.com/github/p3.png)|![](https://ios.saudsoft.com/github/p4.png)    |
 
