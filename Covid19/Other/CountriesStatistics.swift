@@ -1,11 +1,3 @@
-//
-//  SaudiStatistics.swift
-//  Covid19
-//
-//  Created by Saud Almutlaq on 09/06/2020.
-//  Copyright © 2020 Saud Soft. All rights reserved.
-//
-
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
@@ -30,13 +22,14 @@ class StatisticsByCountryElement: Codable {
     let countryInfo: CountryInfo?
     let cases, todayCases, deaths, todayDeaths: Int?
     let recovered, todayRecovered, active, critical: Int?
-    let casesPerOneMillion, deathsPerOneMillion: Double?
+    let casesPerOneMillion: Int?
+    let deathsPerOneMillion: Double?
     let tests, testsPerOneMillion, population: Int?
     let continent: Continent?
     let oneCasePerPeople, oneDeathPerPeople, oneTestPerPeople: Int?
     let activePerOneMillion, recoveredPerOneMillion, criticalPerOneMillion: Double?
-    
-    init(updated: Int?, country: String?, countryInfo: CountryInfo?, cases: Int?, todayCases: Int?, deaths: Int?, todayDeaths: Int?, recovered: Int?, todayRecovered: Int?, active: Int?, critical: Int?, casesPerOneMillion: Double?, deathsPerOneMillion: Double?, tests: Int?, testsPerOneMillion: Int?, population: Int?, continent: Continent?, oneCasePerPeople: Int?, oneDeathPerPeople: Int?, oneTestPerPeople: Int?, activePerOneMillion: Double?, recoveredPerOneMillion: Double?, criticalPerOneMillion: Double?) {
+
+    init(updated: Int?, country: String?, countryInfo: CountryInfo?, cases: Int?, todayCases: Int?, deaths: Int?, todayDeaths: Int?, recovered: Int?, todayRecovered: Int?, active: Int?, critical: Int?, casesPerOneMillion: Int?, deathsPerOneMillion: Double?, tests: Int?, testsPerOneMillion: Int?, population: Int?, continent: Continent?, oneCasePerPeople: Int?, oneDeathPerPeople: Int?, oneTestPerPeople: Int?, activePerOneMillion: Double?, recoveredPerOneMillion: Double?, criticalPerOneMillion: Double?) {
         self.updated = updated
         self.country = country
         self.countryInfo = countryInfo
@@ -66,7 +59,7 @@ class StatisticsByCountryElement: Codable {
 enum Continent: String, Codable {
     case africa = "Africa"
     case asia = "Asia"
-    case australiaOceania = "Australia/Oceania"
+    case australiaOceania = "Australia-Oceania"
     case empty = ""
     case europe = "Europe"
     case northAmerica = "North America"
