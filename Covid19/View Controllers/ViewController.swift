@@ -31,7 +31,9 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         numLang = UserDefaults.standard.string(forKey: "numberLang") ?? "AR"
         dateType = UserDefaults.standard.string(forKey: "dateType") ?? "ar_SA"
+        if (self.totalConfirmed.text == "0") {
         showProgressAndGetGlobalInfo()
+        }
     }
     
     override func viewDidLoad() {
