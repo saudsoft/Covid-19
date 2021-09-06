@@ -86,17 +86,18 @@ class CountryListTableViewController: UITableViewController {
 //            downloadImage(from: url)
         
         print("Download Started")
-        if cell.flagImage.image == nil {
-            getData(from: url) { data, response, error in
+
+        getData(from: url) { data, response, error in
                 guard let data = data, error == nil else { return }
                 print(response?.suggestedFilename ?? url.lastPathComponent)
+                print(url)
                 print("Download Finished")
                 // always update the UI from the main thread
                 DispatchQueue.main.async() { [weak self] in
                     cell.flagImage.image = UIImage(data: data)
                 }
             }
-        }
+        
         
 //        cell.flagImage.image = tempImage.image
         // Configure the cell...
