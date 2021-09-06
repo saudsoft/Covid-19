@@ -74,21 +74,42 @@ class CountryListTableViewController: UITableViewController {
         return organizedData[section].count
     }
     
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! CustomCellView
+        
+        let url = URL(string: organizedData[indexPath.section][indexPath.row].countryInfo?.flag ?? "")!
+//            downloadImage(from: url)
+        
+        print("Download Started")
+        getData(from: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url.lastPathComponent)
+            print("Download Finished")
+            // always update the UI from the main thread
+            DispatchQueue.main.async() { [weak self] in
+                cell.flagImage.image = UIImage(data: data)
+            }
+        }
+        
+//        cell.flagImage.image = tempImage.image
         // Configure the cell...
         if organizedData[indexPath.section][indexPath.row].countryInfo?.iso2 != nil {
             let (englishName, arabicName) = getArabicCountriesName(from: organizedData[indexPath.section][indexPath.row].countryInfo?.iso2 ?? "")
             
             if englishName == "" {
-                cell.textLabel?.text = organizedData[indexPath.section][indexPath.row].country
+                
+                cell.eNameLabel?.text = organizedData[indexPath.section][indexPath.row].country
             }
-            cell.textLabel?.text = englishName
-            cell.detailTextLabel?.text = arabicName
+            cell.eNameLabel?.text = englishName
+            cell.aNameLabel?.text = arabicName
         } else {
-            cell.textLabel?.text = organizedData[indexPath.section][indexPath.row].country
-            cell.detailTextLabel?.text = ""
+            cell.eNameLabel?.text = organizedData[indexPath.section][indexPath.row].country
+            cell.aNameLabel?.text = ""
         }
         
 //        let (englishName, arabicName) = getArabicCountriesName(from: organizedData[indexPath.section][indexPath.row].countryInfo?.iso2 ?? "")

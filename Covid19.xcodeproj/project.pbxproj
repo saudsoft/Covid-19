@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C31B54D026E5FD5700F01767 /* CustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B54CF26E5FD5700F01767 /* CustomCellView.swift */; };
 		C356CBBC2491736100CBB65C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356CBBB2491736100CBB65C /* SettingsViewController.swift */; };
 		C363D88524918DEB006F5087 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C363D88424918DEB006F5087 /* README.md */; };
 		C3956C862469BA0400ECB8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3956C852469BA0400ECB8C0 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 		0568DDED033C25EE91C676F2 /* Pods_Covid19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43104297538BBE6C774F721B /* Pods-Covid19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19.release.xcconfig"; path = "Target Support Files/Pods-Covid19/Pods-Covid19.release.xcconfig"; sourceTree = "<group>"; };
 		9FEDB02C760C4DA107EF1FB8 /* Pods-Covid19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19.debug.xcconfig"; path = "Target Support Files/Pods-Covid19/Pods-Covid19.debug.xcconfig"; sourceTree = "<group>"; };
+		C31B54CF26E5FD5700F01767 /* CustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellView.swift; sourceTree = "<group>"; };
 		C356CBBB2491736100CBB65C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C363D88424918DEB006F5087 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C3956C822469BA0400ECB8C0 /* كوفيد١٩.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "كوفيد١٩.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				C3DA9504248FD15900C6A0E6 /* CountryListTableViewController.swift */,
 				C3DA9508248FDBC700C6A0E6 /* CountryDetailsViewController.swift */,
 				C356CBBB2491736100CBB65C /* SettingsViewController.swift */,
+				C31B54CF26E5FD5700F01767 /* CustomCellView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3956C8A2469BA0400ECB8C0 /* ViewController.swift in Sources */,
+				C31B54D026E5FD5700F01767 /* CustomCellView.swift in Sources */,
 				C3B3FD75246B2508004F8BAF /* Functions.swift in Sources */,
 				C3DA94FF248FB7AB00C6A0E6 /* Helpers.swift in Sources */,
 				C3956C862469BA0400ECB8C0 /* AppDelegate.swift in Sources */,
