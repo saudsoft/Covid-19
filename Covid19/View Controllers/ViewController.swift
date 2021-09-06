@@ -65,17 +65,11 @@ class ViewController: UIViewController {
                 let todayRecovered = formatNumber(number: Int(global["todayRecovered"] ?? 0),lang: numLang)
                 let active = formatNumber(number: Int(global["active"] ?? 0),lang: numLang)
                 let critical = formatNumber(number: Int(global["critical"] ?? 0),lang: numLang)
-//                let casesPerOneMillion = formatNumber(number: Int(global["casesPerOneMillion"] ?? 0))
-//                let deathsPerOneMillion = formatNumber(number: Int(global["deathsPerOneMillion"] ?? 0))
+
                 let tests = formatNumber(number: Int(global["tests"] ?? 0),lang: numLang)
-//                let testsPerOneMillion = formatNumber(number: Int(global["testsPerOneMillion"] ?? 0))
+
                 let population = formatNumber(number: Int(global["population"] ?? 0),lang: numLang)
-//                let oneCasePerPeople = formatNumber(number: Int(global["oneCasePerPeople"] ?? 0))
-//                let oneDeathPerPeople = formatNumber(number: Int(global["oneDeathPerPeople"] ?? 0))
-//                let oneTestPerPeople = formatNumber(number: Int(global["oneTestPerPeople"] ?? 0))
-//                let activePerOneMillion = formatNumber(number: Int(global["activePerOneMillion"] ?? 0))
-//                let recoveredPerOneMillion = formatNumber(number: Int(global["recoveredPerOneMillion"] ?? 0))
-//                let criticalPerOneMillion = formatNumber(number: Int(global["criticalPerOneMillion"] ?? 0))
+                
                 let affectedCountries = formatNumber(number: Int(global["affectedCountries"] ?? 0),lang: numLang)
                 
                 DispatchQueue.main.async {
