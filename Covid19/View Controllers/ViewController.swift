@@ -52,6 +52,8 @@ class ViewController: UIViewController {
     
     func getGlobalInfo() {
         let url = URL(string: "https://corona.lmao.ninja/v2/all?today=")!
+//TODO: API updated with new url "https://disease.sh/v3/covid-19/all"
+        
         let task = URLSession.shared.globalStatisticsTask(with: url) { global, response, error in
             if let global = global {
                 
