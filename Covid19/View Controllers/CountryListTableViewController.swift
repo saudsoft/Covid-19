@@ -93,7 +93,7 @@ class CountryListTableViewController: UITableViewController {
                 print(url)
                 print("Download Finished")
                 // always update the UI from the main thread
-                DispatchQueue.main.async() { [weak self] in
+            DispatchQueue.main.async() {
                     cell.flagImage.image = UIImage(data: data)
                 }
             }
